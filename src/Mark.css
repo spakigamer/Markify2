@@ -1,0 +1,113 @@
+/* Mark.css or your-css-file.css */
+
+/* Basic Markdown Styling */
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333; /* Dark gray text color */
+    margin: 20px; /* Add some margin around the content */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #000; /* Black headings */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f0f0f0; /* Light gray background for code */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+pre {
+    font-family: monospace;
+    background-color: #f0f0f0; /* Light gray background for pre */
+    padding: 10px;
+    border-radius: 3px;
+    overflow-x: auto; /* Add horizontal scrollbar if needed */
+    white-space: pre-wrap; /* Allow wrapping of long lines */
+}
+
+blockquote {
+    border-left: 5px solid #ccc; /* Light gray border */
+    padding-left: 10px;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Light gray line */
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ccc; /* Light gray border for table cells */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Print-Specific Styles */
+@media print {
+    body {
+        font-size: 12pt; /* Larger font size for printing */
+        margin: 20mm; /* Margins in millimeters for printing */
+    }
+
+    /* Add any other print-specific styles here */
+    table {
+        width: 100%;
+    }
+}

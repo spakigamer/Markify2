@@ -1,0 +1,15 @@
+input::placeholder{
+    color: aliceblue;
+}
+
+textarea::placeholder{
+    color: aliceblue;
+}
+
+input{
+    color: aliceblue;
+}
+
+textarea{
+    color: aliceblue;
+}
