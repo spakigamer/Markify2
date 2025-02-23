@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Props from './Mark'
-import MyComponent from './display'
 import Home from './Home'
 import Nav from './Navbar/nav'
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
