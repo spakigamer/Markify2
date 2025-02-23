@@ -31,7 +31,7 @@
     "html2pdf.js": "^0.9.3",
     "install": "^0.13.0",
     "jsonwebtoken": "^9.0.2",
-    "jspdf": "^1.5.3",
+    "jspdf": "^3.0.0",
     "markdown-css": "^0.0.3",
     "markdown-it": "^14.1.0",
     "markdown-it-abbr": "^2.0.0",
