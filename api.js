@@ -10,9 +10,15 @@ import bcrypt from 'bcrypt';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
+import http from "http";
+import App from "./App.jsx";
 
+const server = http.createServer(app);
+
+server.keepAliveTimeout = 120000; // 120 seconds
+server.headersTimeout = 120000;
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 dotenv.config();
 const saltRounds = 10;
 // Connect to MongoDB
@@ -158,4 +164,6 @@ app.post('/search', authenticateToken, async (req, res) => {
   res.json(note ? { resultsgot: note, message: 'true' } : { message: 'false' });
 });
 
-app.listen(port, () => console.log('Port 3000 is active'));
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
