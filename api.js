@@ -16,6 +16,7 @@ const port = 3000;
 dotenv.config();
 const saltRounds = 10;
 
+console.log(process.env.MONGO_URI)
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,

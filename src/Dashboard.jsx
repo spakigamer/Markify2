@@ -77,7 +77,7 @@ function Dashboard() {
                         <p className="text-sm text-gray-400 mt-2">Start by creating a new one!</p>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full max-w-5xl">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 p-4 w-full max-w-5xl">
                         {notes.map((note) => (
                             <Card props={note} key={note.id} />
                         ))}
